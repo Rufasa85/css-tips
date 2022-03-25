@@ -1,0 +1,93 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    color:#b829c5;
+}
+
+body {
+    background:rgb(39, 38, 38);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header {
+ 
+    height:15vh;
+}
+main {
+   
+    min-height:70vh;
+    padding:10px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+footer {
+    
+    height:15vh;
+}
+
+h1,h2 {
+    text-align: center;
+}
+
+.card {
+    border: 3px dashed black;
+    width:30%;
+    padding: 0 20px;
+    margin:20px 0;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.8s linear;
+}
+
+.card:hover,.card:hover h3 {
+    box-shadow: 5px 5px 20px 5px inset #b829c5;
+    /* transition: box-shadow 0.8s linear; */
+}
+
+.card h3 {
+    border:3px solid black;
+    text-align: center;
+    width:95%;
+    margin: 0 auto;
+    position: relative;
+    top:-15px;
+    background:rgb(39, 38, 38);
+    border-radius: 10px;
+    transition: box-shadow 0.8s linear;
+    font-size:30px;
+}
+
+.card pre {
+    background:linear-gradient(rgb(39, 38, 38),#b829c5);
+    border-radius: 20px;
+    margin-bottom: 10px;
+    padding:2%;
+    flex-grow:1;
+    user-select: all;
+    display: flex;
+    align-items: center;
+   
+}
+
+code::selection {
+    background:aqua;
+    color:coral;
+}
+
+code {
+    color:white
+}
+
+@media screen and (max-width:992px){
+    .card {
+        width:45%;
+    }
+}
+@media screen and (max-width:576px){
+    .card {
+        width:90%;
+    }
+}
